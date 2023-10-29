@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  &__link {
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    font-size: var(--h3-font-size);
+    transition: 0.3s color;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
